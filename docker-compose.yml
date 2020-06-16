@@ -1,0 +1,13 @@
+
+version: '3.7'
+
+services:
+  appserver:
+    #build: ./
+    image: jasseralg/appserver:20
+    container_name: appserver
+    hostname: appserver
+    #env_file:
+    #- .env
+    ports:
+    - "80:3000"
